@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>私のウェブサイト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>BO Metrics</title>
+
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        iframe {
+            border: none;
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>こんにちは！</h1>
-    <p>これはGitHub Pagesで公開した最初のWebサイトです。</p>
+    <iframe 
+        src="https://script.google.com/a/macros/biglobe.co.jp/s/AKfycby2sfgywrpsxUnsmFEJnSLcdUcduLfV8I2MHJ_hxR_4dlmDDRB0fs08JlYQlq4JMPkp/exec"
+        allow="fullscreen">
+    </iframe>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/pages/sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </body>
 </html>

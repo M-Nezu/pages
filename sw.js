@@ -2,8 +2,8 @@ const CACHE_NAME = 'pwa-sample-cache-v1';
 // キャッシュしたいファイルのリスト
 // ここもリポジトリ名を含める必要があります
 const urlsToCache = [
-  '/pages/',
-  '/pages/metricsgraph.html',
+  '/bometrics/',
+  '/bometrics/index.html',
   'icon-192.png',
   'icon-512.png'
 ];

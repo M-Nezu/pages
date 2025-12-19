@@ -1,11 +1,11 @@
 {
-  "name": "Metrics Graph",
-  "short_name": "MetricsGraph",
+  "name": "BO Metrics",
+  "short_name": "BOMetrics",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/pages/",
-  "start_url": "/pages/metricsgraph.html",
+  "scope": "/bometrics/",
+  "start_url": "/bometrics/index.html",
   "icons": [
     {
       "src": "icon-192.png",
